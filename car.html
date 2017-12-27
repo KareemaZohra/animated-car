@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Sample</title>
+    <style>
+        .main{
+           ;
+        }
+        .body {
+            width: 250px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            position: relative;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate
+        }
+
+        .window{
+            width: 25px;
+            height: 30px;
+            background:none repeat scroll 0 0 blue;
+            border: 2px solid black;
+            position: fixed;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            float: left;
+            margin-top: 25px;
+        }
+        .gate{
+            width: 20px;
+            height: 75px;
+            background:none repeat scroll 0 0 red;
+            border: 2px solid black;
+            position: fixed;
+            animation-name: example;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            float: left;
+            margin-top: 25px;
+
+        }
+        .wheel{
+            border-radius: 50%;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background:none repeat scroll 0 0 black;
+            animation-name: example2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            float: left;
+        }
+        hr{
+            background-color: white;
+            width: 90%;
+            height: 1px;
+            margin-top: 23px;
+        }
+
+        @keyframes example {
+            0%   {left:0px; top:0px;}
+            100% {left:600px; top:0px;}
+        }
+        
+         @keyframes example2 {
+            0%  {left:0px; top:0px;transform: rotate(36deg);}
+            10% {transform: rotate(72deg);}
+            20% {transform: rotate(108deg);}
+            30% {transform: rotate(144deg);}
+             40% {transform: rotate(180deg);}
+             50% {transform: rotate(216deg);}
+             60% {transform: rotate(252deg);}
+             70% {transform: rotate(268deg);}
+             80% {transform: rotate(304deg);}
+            100%{left:600px; top:0px; transform: rotate(340deg);}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="body">
+        <div class="gate" style="margin-left: 15px;"></div>
+        <div class="window" style="margin-left: 50px;"></div>
+        <div class="window" style="margin-left: 95px;"></div>
+        <div class="window" style="margin-left: 140px;"></div>
+        <div class="window" style="margin-left: 185px;"></div>
+        <div class="gate" style="margin-left: 225px;"></div>
+    </div>
+<div class="row">
+    <div class="wheel" style="margin-left: 15px;"><hr></div>
+    <div class="wheel" style="margin-left: 125px;"><hr></div>
+</div>
+
+</body>
+</html>
